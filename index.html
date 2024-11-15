@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional services, products, and support for businesses."
+    />
+    <title>Service Provider | FissionFox</title>
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Montserrat Font -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- cloudflare -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Framer Motion -->
+    <script src="https://unpkg.com/framer-motion@10.12.16/dist/framer-motion.js"></script>
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </head>
+  <body class="bg-gray-50 leading-normal tracking-normal">
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen flex items-center justify-center bg-black overflow-hidden"
+    >
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Background"
+          class="w-full h-full object-cover opacity-20"
+        />
+      </div>
+
+      <header>
+        <nav
+          class="bg-[#1a1a1a] px-4 py-3 fixed w-full md:w-2/3 top-0 md:top-5 z-50 transform left-1/2 -translate-x-1/2 rounded-none md:rounded-full"
+        >
+          <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <img src="/assets/LogoImg.png" class="w-11 h-11 ml-4" alt="" />
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-white">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-16 6h16"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="nav-links hidden md:flex items-center space-x-8">
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >About</a
+              >
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >Support</a
+              >
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >Download</a
+              >
+              <a
+                href="#"
+                class="bg-yellow-500 hover:bg-gray-700 hover:text-white text-white text-sm font-medium px-6 py-2 rounded-full transition-colors"
+                >Login</a
+              >
+            </div>
+          </div>
+
+          <!-- Mobile menu -->
+          <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <div class="flex flex-col space-y-4 px-2 pb-3">
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >About</a
+              >
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >Support</a
+              >
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition-colors"
+                >Download</a
+              >
+              <a
+                href="#"
+                class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-100 transition-colors text-center"
+                >Login</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <!-- Spacer to prevent content from hiding behind fixed navbar -->
+        <div class="h-16"></div>
+      </header>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 container mx-auto px-6 text-white space-y-12 flex flex-col items-center"
+      >
+        <div class="w-11/12 lg:w-3/5 h-full mx-auto">
+          <h1
+            class="text-4xl md:text-7xl font-bold mb-4 leading-tight w-full capitalize text-center"
+          >
+            <span class="mx-auto text-center">
+              <div class="stage text-center">
+                <div class="cubespinner">
+                  <div class="face1">Innovative</div>
+                  <div class="face2">Creative</div>
+                  <div class="face3">Unbeatable</div>
+                  <div class="face4">Exceptional</div>
+                </div>
+              </div>
+            </span>
+            <br />
+            Knowledge with Clear, Reliable Information
+          </h1>
+        </div>
+        <p class="w-11/12 lg:w-3/5 mx-auto text-center text-sm lg:text-base">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+          fuga tempora quo optio dolores. Sit nam cum debitis eligendi quam
+          quaerat, nihil necessitatibus rem. Aliquam, rerum.
+        </p>
+        <button
+          id="startButton"
+          class="capitalize rounded-full border border-white py-3 px-5 text-white transition duration-300 ease-in-out"
+        >
+          get started
+        </button>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-sm flex flex-col items-center"
+      >
+        <span class="mb-2">SCROLL</span>
+        <svg
+          class="w-6 h-6 scroll-indicator"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-14">
+      <div class="mx-auto">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div
+            class="lg:w-2/5 lg:pl-16 lg:flex-col lg:block hidden items-start justify-between gap-y-3"
+          >
+            <h3 class="text-7xl font-semibold mb-4">Our Story</h3>
+            <p class="text-gray-600 mb-6 w-full lg:w-11/12 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              iure ea numquam doloribus, beatae nobis? Deleniti similique eum
+              eius nulla tempore ad vero sapiente itaque et corrupti sint
+              labore, maxime eos.
+              <span class="text-lg font-semibold text-black"
+                >Culpa impedit enim sit saepe quis debitis iure mollitia
+                aspernatur, laudantium facilis
+              </span>
+              quod excepturi inventore maxime reiciendis qui, vitae blanditiis
+              at laborum illum numquam exercitationem. Eos saepe perferendis
+              nemo et, libero dolorum deserunt porro, tempora dicta recusandae
+              asperiores cupiditate, vel culpa eveniet assumenda eius rerum
+              quidem eligendi aperiam animi repellendus distinctio non
+              architecto! Iusto, rerum aliquam! Facere animi odio expedita quas
+              totam aliquam obcaecati eius, laboriosam aut omnis recusandae
+              quisquam consequuntur quaerat nam assumenda nostrum. Quaerat iure
+              ut ea corrupti iste et debitis, facere eveniet voluptatibus sunt
+              deleniti accusamus consequatur blanditiis, suscipit atque
+              perspiciatis? Quasi in tenetur ex assumenda ratione quidem et
+              voluptatum ut dolorum, explicabo consequuntur, fugit enim sed
+              laboriosam reiciendis architecto omnis quas voluptatem officiis
+              commodi optio dolorem temporibus maxime. Asperiores libero eveniet
+              explicabo amet eos debitis deserunt aliquam totam similique autem
+              est, omnis laudantium repellat quisquam dolor! Velit vel
+              temporibus dolores tempora eum, sunt nesciunt earum natus
+              distinctio deleniti molestias quia tempore nihil. Facere fugiat,
+              perspiciatis in voluptatum veniam voluptas maxime? Minima pariatur
+              expedita labore rem.
+            </p>
+          </div>
+          <div class="lg:w-3/5 mb-10 md:mb-0">
+            <div class="relative px-3 lg:px-0">
+              <img
+                src="https://images.pexels.com/photos/1182826/pexels-photo-1182826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="aboutImage"
+                class="rounded-lg grayscale w-full"
+              />
+              <div
+                class="hidden lg:block absolute inset-0 bg-black opacity-40 rounded-lg"
+              ></div>
+              <div
+                class="hidden lg:block absolute bottom-3 left-0 lg:left-3 mx-auto w-4/5 lg:w-2/3 h-80 bg-gradient-to-bl from-yellow-100 to-white items-center justify-center rounded-lg"
+              >
+                <div
+                  class="w-full h-full flex flex-col items-start justify-between gap-3 p-3"
+                >
+                  <span class="text-xs font-normal text-gray-950 uppercase"
+                    >ABOUT US</span
+                  >
+                  <h1
+                    class="w-2/3 md:w-4/5 lg:w-full text-3xl lg:text-6xl text-black"
+                  >
+                    Driving Healthcare Success with Investments
+                  </h1>
+                  <button
+                    class="border-2 border-black py-2 px-4 rounded-full text-black flex items-center justify-between gap-x-3 font-medium transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border-transparent"
+                  >
+                    Our Services
+                    <span>
+                      <svg
+                        class="w-4 h-4 transition-all duration-300 ease-in-out group-hover:stroke-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:hidden w-11/12 lg:w-2/5 lg:pl-16 flex-col items-start justify-between gap-y-3 pt-20"
+          >
+            <h3 class="text-7xl font-semibold mb-4">Our Story</h3>
+            <p class="text-gray-600 mb-6 w-full lg:w-11/12 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              iure ea numquam doloribus, beatae nobis? Deleniti similique eum
+              eius nulla tempore ad vero sapiente itaque et corrupti sint
+              labore, maxime eos.
+              <span class="text-lg font-semibold text-black"
+                >Culpa impedit enim sit saepe quis debitis iure mollitia
+                aspernatur, laudantium facilis
+              </span>
+              quod excepturi inventore maxime reiciendis qui, vitae blanditiis
+              at laborum illum numquam exercitationem. Eos saepe perferendis
+              nemo et, libero dolorum deserunt porro, tempora dicta recusandae
+              asperiores cupiditate, vel culpa eveniet assumenda eius rerum
+              quidem eligendi aperiam animi repellendus distinctio non
+              architecto! Iusto, rerum aliquam! Facere animi odio expedita quas
+              totam aliquam obcaecati eius, laboriosam aut omnis recusandae
+              quisquam consequuntur quaerat nam assumenda nostrum. Quaerat iure
+              ut ea corrupti iste et debitis, facere eveniet voluptatibus sunt
+              deleniti accusamus consequatur blanditiis, suscipit atque
+              perspiciatis? Quasi in tenetur ex assumenda ratione quidem et
+              voluptatum ut dolorum, explicabo consequuntur, fugit enim sed
+              laboriosam reiciendis architecto omnis quas voluptatem officiis
+              commodi optio dolorem temporibus maxime. Asperiores libero eveniet
+              explicabo amet eos debitis deserunt aliquam totam similique autem
+              est, omnis laudantium repellat quisquam dolor! Velit vel
+              temporibus dolores tempora eum, sunt nesciunt earum natus
+              distinctio deleniti molestias quia tempore nihil. Facere fugiat,
+              perspiciatis in voluptatum veniam voluptas maxime? Minima pariatur
+              expedita labore rem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="py-8 lg:py-20">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-5xl lg:text-6xl text-center mb-12 capitalize max-w-4xl mx-auto"
+        >
+          Services that we provide that
+          <span class="font-bold">stand out among all</span>
+        </h2>
+        <div
+          class="grid grid-cols-1 w-full md:w-4/5 lg:grid-cols-3 gap-6 lg:max-w-6xl mx-auto"
+        >
+          <div
+            class="col-span-1 rounded-xl flex flex-col justify-start p-7 border border-gray-300"
+          >
+            <h3 class="text-4xl tracking-tight py-4">Design</h3>
+            <p class="text-left tracking-tight leading-relaxed mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              eos ea voluptatibus dolor, enim molestiae nulla veniam
+              necessitatibus repudiandae assumenda inventore eaque fugiat optio
+              quo sunt commodi quam similique.
+            </p>
+            <img
+              src="https://cdn.pixabay.com/photo/2022/11/11/09/51/maple-7584635_960_720.png"
+              class="w-full h-auto mt-auto rounded-lg"
+              alt="Design illustration"
+            />
+          </div>
+          <div class="col-span-1 lg:col-span-2 grid grid-cols-1 gap-6">
+            <div class="border border-gray-300 rounded-xl px-7 pt-7">
+              <h3 class="text-4xl tracking-tight py-4">Develop</h3>
+              <p class="text-left tracking-tight leading-relaxed mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+                eos ea voluptatibus dolor, enim molestiae nulla veniam
+                necessitatibus repudiandae assumenda inventore eaque fugiat
+                optio quo sunt commodi quam similique.
+              </p>
+              <div
+                class="w-full h-36 flex justify-center relative overflow-hidden"
+              >
+                <img
+                  src="https://cdn.pixabay.com/photo/2014/09/18/11/56/skyscrapers-450793_960_720.jpg"
+                  class="absolute right-0 w-full rounded-t-xl"
+                  alt="Development illustration"
+                />
+              </div>
+            </div>
+            <div class="border border-gray-300 rounded-xl px-7 pt-7">
+              <h3 class="text-4xl tracking-tight py-4">Deploy</h3>
+              <p class="text-left tracking-tight leading-relaxed mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+                eos ea voluptatibus dolor, enim molestiae nulla veniam
+                necessitatibus repudiandae assumenda inventore eaque fugiat
+                optio quo sunt commodi quam similique.
+              </p>
+              <div
+                class="w-full h-36 flex justify-center relative overflow-hidden"
+              >
+                <img
+                  src="https://cdn.pixabay.com/photo/2014/09/18/11/56/skyscrapers-450793_960_720.jpg"
+                  class="absolute right-0 w-full rounded-t-xl"
+                  alt="Development illustration"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Us Section -->
+    <section id="find-us" class="bg-[#f5f5f5] py-20">
+      <div class="w-full h-full lg:h-[80vh] flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/2 h-full p-3 md:p-16">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648718453!2d-73.98656668459375!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629794729599!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="rounded-3xl"
+          ></iframe>
+        </div>
+        <div
+          class="w-full lg:w-1/2 h-full bg-slate-100 rounded-3xl p-12 py-12 space-y-4"
+        >
+          <h1 class="text-2xl md:text-6xl leading-snug pt-8 capitalize">
+            Got Ideas? We've got the skills Let's Team Up
+          </h1>
+          <p class="text-sm md:text-lg font-medium">
+            Tell us about more What you are looking for?
+          </p>
+          <form action="">
+            <!-- First Name Field -->
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder=""
+                class="bg-transparent focus:outline-none focus:border-none border-b-2 border-gray-300 focus:border-blue-500"
+                required
+              />
+
+              <label for="first-name">First Name</label>
+            </div>
+
+            <!-- Last Name Field -->
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder=""
+                class="bg-transparent"
+                required
+              />
+              <label for="last-name">Last Name</label>
+            </div>
+
+            <!-- Email Field -->
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=""
+                class="bg-transparent"
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder=""
+                class="bg-transparent"
+                required
+              />
+              <label for="phone">Phone</label>
+            </div>
+
+            <!-- Comment Field -->
+            <div class="input-wrapper">
+              <textarea
+                id="comment"
+                name="comment"
+                placeholder=""
+                class="bg-transparent"
+                required
+              ></textarea>
+              <label for="comment">Comment</label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-6">
+              <button
+                type="submit"
+                class="w-full bg-gray-700 hover:bg-gray-950 text-white font-medium py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                Let's Get Started
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <!-- <section id="contact" class="py-20">
+      <div class="h-[80vh] w-full flex py-3 px-5">
+        <div class="w-1/2 h-full"></div>
+        <div class="w-1/2 h-full bg-slate-100 rounded-3xl p-12 py-12 space-y-4">
+          <h1 class="text-6xl leading-snug pt-8 capitalize">
+            Got Ideas? We've got the skills Let's Team Up
+          </h1>
+          <p class="text-lg font-medium">
+            Tell us about more What you are looking for?
+          </p>
+          <form action="">
+           
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder=""
+                class="bg-transparent focus:outline-none focus:border-none border-b-2 border-gray-300 focus:border-blue-500"
+                required
+              />
+
+              <label for="first-name">First Name</label>
+            </div>
+
+            
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder=""
+                class="bg-transparent"
+                required
+              />
+              <label for="last-name">Last Name</label>
+            </div>
+
+            
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=""
+                class="bg-transparent"
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+
+           
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder=""
+                class="bg-transparent"
+                required
+              />
+              <label for="phone">Phone</label>
+            </div>
+
+            
+            <div class="input-wrapper">
+              <textarea
+                id="comment"
+                name="comment"
+                placeholder=""
+                class="bg-transparent"
+                required
+              ></textarea>
+              <label for="comment">Comment</label>
+            </div>
+
+            
+            <div class="mt-6">
+              <button
+                type="submit"
+                class="w-full bg-gray-700 hover:bg-gray-950 text-white font-medium py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                Let's Get Started
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Call to Action Section -->
+    <section class="bg-[#1a1a1a] text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Transform Your Business?
+        </h2>
+        <p class="text-xl mb-8">
+          Join DomainName today and unlock the full potential of your digital
+          journey.
+        </p>
+        <a
+          href="#contact"
+          class="bg-white text-black px-8 py-3 rounded-full text-lg font-semibold hover:bg-black hover:text-white transition duration-300"
+          >Get Started Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2c2c2c] text-white py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h3 class="text-xl font-semibold mb-4">DomainName</h3>
+            <p class="text-gray-400">
+              Empowering businesses through digital innovation.
+            </p>
+          </div>
+          <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="block sm:block w-full md:hidden lg:w-1/4">
+            <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+            <form class="flex flex-col sm:flex-row w-full sm:w-auto">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="flex-grow sm:flex-grow-0 px-4 py-2 mb-3 sm:mb-0 rounded-md sm:rounded-l-md focus:outline-none focus:ring-2 sm:rounded-r-none"
+              />
+              <button
+                type="submit"
+                class="bg-gray-900 text-white px-4 py-2 rounded-md sm:rounded-r-md hover:bg-black transition duration-300 sm:rounded-l-none"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2024 FissionFox. All rights reserved by Dev.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</html>
