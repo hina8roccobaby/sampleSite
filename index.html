@@ -481,7 +481,54 @@
           ></path>
         </svg>
       </div>
+
+      <!-- Scroll to Top Button -->
+      <button
+        id="scrollToTopBtn"
+        class="fixed bottom-6 right-6 w-6 h-6 p-6 bg-[#1a1a1a] text-white rounded-full shadow-lg hidden hover:bg-[#0c0c0c] transition-all z-50 flex justify-center items-center"
+      >
+        <div class="-rotate-180">
+          <svg
+            class="w-5 h-5 scroll-indicator"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            ></path>
+          </svg>
+        </div>
+      </button>
     </section>
+
+    <script>
+      // Get the scroll-to-top button
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show the button when the user scrolls down
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          scrollToTopBtn.classList.remove("hidden");
+        } else {
+          scrollToTopBtn.classList.add("hidden");
+        }
+      };
+
+      // Scroll to the top when the button is clicked
+      scrollToTopBtn.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+    </script>
 
     <!-- About Us Section -->
     <section id="about" class="py-14">
@@ -545,7 +592,7 @@
                 class="hidden lg:block absolute inset-0 bg-black opacity-40 rounded-lg"
               ></div>
               <div
-                class="hidden lg:block absolute bottom-3 left-0 lg:left-3 mx-auto w-4/5 lg:w-2/3 h-80 bg-gradient-to-bl from-yellow-100 to-white items-center justify-center rounded-lg"
+                class="hidden lg:block absolute bottom-3 left-0 lg:left-3 mx-auto w-4/5 lg:w-2/3 h-80 bg-gradient-to-bl from-[#b9b9b9] to-white items-center justify-center rounded-lg"
               >
                 <div
                   class="w-full h-full flex flex-col items-start justify-between gap-3 p-3"
@@ -621,9 +668,7 @@
                 facilities.
               </p>
               <br />
-              <h1 class="text-black text-3xl font-medium py-2">
-                Our Mission
-              </h1>
+              <h1 class="text-black text-3xl font-medium py-2">Our Mission</h1>
               <p>
                 To transform behavioral health properties into thriving,
                 efficient centers of healing. We do this by acquiring facilities
@@ -639,8 +684,11 @@
     </section>
 
     <!-- Our Services Section -->
-    <section id="services" class="py-8 lg:py-20">
-      <div class="container mx-auto px-4">
+    <section id="services" class="py-8 lg:py-28">
+      <div class="w-full container mx-auto px-4">
+        <h5 class="text-center pb-5">
+          What We Do <span class="font-bold">Best</span>
+        </h5>
         <h2
           class="text-3xl md:text-5xl lg:text-6xl text-center mb-12 capitalize max-w-4xl mx-auto"
         >
@@ -648,61 +696,52 @@
           <span class="font-bold">stand out among all</span>
         </h2>
         <div
-          class="grid grid-cols-1 w-full md:w-4/5 lg:grid-cols-3 gap-6 lg:max-w-6xl mx-auto"
+          class="grid grid-cols-1 lg:grid-cols-3 px-16 py-10 h-full lg:h-[700px] gap-5"
         >
           <div
-            class="col-span-1 rounded-xl flex flex-col justify-start p-7 border border-gray-300"
+            class="rounded-[80px] p-14 bg-[#1a1a1a] transform hover:-translate-y-2 transition-all cursor-pointer"
           >
-            <h3 class="text-4xl tracking-tight py-4">Design</h3>
-            <p class="text-left tracking-tight leading-relaxed mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-              eos ea voluptatibus dolor, enim molestiae nulla veniam
-              necessitatibus repudiandae assumenda inventore eaque fugiat optio
-              quo sunt commodi quam similique.
+            <h5 class="text-white text-sm">{ 1 }</h5>
+            <div class="flex justify-end pt-12 pb-6">
+              <img src="/sampleSite/service1.png" alt="" />
+            </div>
+            <h1 class="text-5xl text-white">Investment Sales</h1>
+            <p class="py-4 text-white">
+              With deep market knowledge and a broad network,
+              <b>TYH</b> provides expert insights and strategic guidance
+              throughout the investment sales process, ensuring maximum value
+              and profitability.
             </p>
-            <img
-              src="https://cdn.pixabay.com/photo/2022/11/11/09/51/maple-7584635_960_720.png"
-              class="w-full h-auto mt-auto rounded-lg"
-              alt="Design illustration"
-            />
           </div>
-          <div class="col-span-1 lg:col-span-2 grid grid-cols-1 gap-6">
-            <div class="border border-gray-300 rounded-xl px-7 pt-7">
-              <h3 class="text-4xl tracking-tight py-4">Develop</h3>
-              <p class="text-left tracking-tight leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                eos ea voluptatibus dolor, enim molestiae nulla veniam
-                necessitatibus repudiandae assumenda inventore eaque fugiat
-                optio quo sunt commodi quam similique.
-              </p>
-              <div
-                class="w-full h-36 flex justify-center relative overflow-hidden"
-              >
-                <img
-                  src="https://cdn.pixabay.com/photo/2014/09/18/11/56/skyscrapers-450793_960_720.jpg"
-                  class="absolute right-0 w-full rounded-t-xl"
-                  alt="Development illustration"
-                />
-              </div>
+
+          <div
+            class="rounded-[80px] p-14 border border-[#1a1a1a] transform hover:-translate-y-2 transition-all cursor-pointer"
+          >
+            <h5 class="text-[#1a1a1a] text-sm">{ 2 }</h5>
+            <div class="flex justify-end pt-12 pb-6">
+              <img src="/sampleSite/service2.png" alt="" />
             </div>
-            <div class="border border-gray-300 rounded-xl px-7 pt-7">
-              <h3 class="text-4xl tracking-tight py-4">Deploy</h3>
-              <p class="text-left tracking-tight leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                eos ea voluptatibus dolor, enim molestiae nulla veniam
-                necessitatibus repudiandae assumenda inventore eaque fugiat
-                optio quo sunt commodi quam similique.
-              </p>
-              <div
-                class="w-full h-36 flex justify-center relative overflow-hidden"
-              >
-                <img
-                  src="https://cdn.pixabay.com/photo/2014/09/18/11/56/skyscrapers-450793_960_720.jpg"
-                  class="absolute right-0 w-full rounded-t-xl"
-                  alt="Development illustration"
-                />
-              </div>
+            <h1 class="text-5xl text-[#1a1a1a]">Property Acquisition</h1>
+            <p class="py-4 text-[#1a1a1a]">
+              With deep market knowledge and a strong network,
+              <b>TYH</b> delivers expert guidance to businesses seeking
+              owner/user properties, ensuring the perfect fit for operational
+              needs while maximizing long-term value.
+            </p>
+          </div>
+          <div
+            class="rounded-[80px] p-14 bg-[#1a1a1a] transform hover:-translate-y-2 transition-all cursor-pointer"
+          >
+            <h5 class="text-white text-sm">{ 3 }</h5>
+            <div class="flex justify-end pt-12 pb-6">
+              <img src="/sampleSite/service3.png" alt="" />
             </div>
+            <h1 class="text-5xl text-white">Portfolio Services</h1>
+            <p class="py-4 text-white">
+              <b>TYH</b> offers expert Portfolio Services, helping clients
+              optimize and grow their real estate assets through strategic
+              acquisition, management, and disposition.
+            </p>
           </div>
         </div>
       </div>
@@ -810,97 +849,12 @@
         </div>
       </div>
     </section>
-
-    <!-- Contact Form Section -->
-    <!-- <section id="contact" class="py-20">
-      <div class="h-[80vh] w-full flex py-3 px-5">
-        <div class="w-1/2 h-full"></div>
-        <div class="w-1/2 h-full bg-slate-100 rounded-3xl p-12 py-12 space-y-4">
-          <h1 class="text-6xl leading-snug pt-8 capitalize">
-            Got Ideas? We've got the skills Let's Team Up
-          </h1>
-          <p class="text-lg font-medium">
-            Tell us about more What you are looking for?
-          </p>
-          <form action="">
-           
-            <div class="input-wrapper">
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder=""
-                class="bg-transparent focus:outline-none focus:border-none border-b-2 border-gray-300 focus:border-blue-500"
-                required
-              />
-
-              <label for="first-name">First Name</label>
-            </div>
-
-            
-            <div class="input-wrapper">
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder=""
-                class="bg-transparent"
-                required
-              />
-              <label for="last-name">Last Name</label>
-            </div>
-
-            
-            <div class="input-wrapper">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder=""
-                class="bg-transparent"
-                required
-              />
-              <label for="email">Email</label>
-            </div>
-
-           
-            <div class="input-wrapper">
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder=""
-                class="bg-transparent"
-                required
-              />
-              <label for="phone">Phone</label>
-            </div>
-
-            
-            <div class="input-wrapper">
-              <textarea
-                id="comment"
-                name="comment"
-                placeholder=""
-                class="bg-transparent"
-                required
-              ></textarea>
-              <label for="comment">Comment</label>
-            </div>
-
-            
-            <div class="mt-6">
-              <button
-                type="submit"
-                class="w-full bg-gray-700 hover:bg-gray-950 text-white font-medium py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                Let's Get Started
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section> -->
+    <button
+      id="scrollToTopBtn"
+      class="fixed bottom-6 right-6 p-4 bg-blue-500 text-white rounded-full shadow-lg hidden hover:bg-blue-600 transition-all"
+    >
+      ↑
+    </button>
 
     <!-- Call to Action Section -->
     <section class="bg-[#1a1a1a] text-white py-20">
