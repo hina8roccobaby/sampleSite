@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Family -->
+     <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <style>
+
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+
+      /* Custom animation for the logo letters */
+      @keyframes fadeInLetter {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in-letter {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeInLetter 0.5s ease forwards;
+      }
+
+      /* Delay the animation for each letter */
+      .letter-1 {
+        animation-delay: 0.1s;
+      }
+      .letter-2 {
+        animation-delay: 0.2s;
+      }
+      .letter-3 {
+        animation-delay: 0.3s;
+      }
+      .letter-4 {
+        animation-delay: 0.4s;
+      }
+
+      /* Custom animation for main content */
+      @keyframes dropIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .drop-in {
+        opacity: 0;
+        animation: dropIn 1s ease forwards;
+      }
+
+      /* Hide the main content initially */
+      #main-content {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loader Screen -->
+    <div
+      id="loader"
+      class="flex items-center justify-center min-h-screen bg-white"
+    >
+      <h1 class="text-5xl font-bold text-blue-600">
+        <!-- Logo letters split into spans -->
+        <span class="fade-in-letter letter-1">L</span>
+        <span class="fade-in-letter letter-2">O</span>
+        <span class="fade-in-letter letter-3">G</span>
+        <span class="fade-in-letter letter-4">O</span>
+      </h1>
+    </div>
+
+    <!-- Main Landing Page -->
+    <div id="main-content" class="min-h-screen flex flex-col">
+      <!-- NavBar -->
+      <div
+        class="h-24 w-full border border-gray-300 border-r-0 border-l-0 border-t-0 flex justify-center items-center"
+      >
+        <div class="w-2/3 h-full flex justify-between items-center">
+          <!-- Logo -->
+          <img src="/sampleSite/LogoMain.png" class="w-20" alt="" />
+          <!-- Nav In Right -->
+          <ul class="flex items-center gap-x-8 font-semibold text-gray-700">
+            <li>Work</li>
+            <li>Services</li>
+            <li>Team</li>
+            <li>Insight</li>
+            <li>
+              <button
+                class="bg-blue-500 text-white font-semibold rounded-full px-8 py-4"
+              >
+                Contact Us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Index Layout -->
+      <div
+        class="flex flex-col items-center justify-center bg-gradient-to-r mx-auto w-2/3 h-full"
+      >
+        <div class="h-full w-[88%] flex flex-col items-start justify-center py-24">
+          <!-- First Section -->
+          <div class="text-left space-y-8">
+            <h1 class="text-7xl font-bold mb-4 drop-in tracking-wider">
+                Crafting user friendly products aesthetically
+            </h1>
+            <p class="text-2xl drop-in font-medium text-gray-500" style="animation-delay: 0.5s">
+                Help find solutions that are intuitive and in accordance with client business goals. We provide a high-quality service in UI/UX Design, Graphic Design, Motion Design, Branding & Development.
+            </p>
+            <div class="flex items-center justify-normal gap-x-4">
+                <button
+                class="bg-blue-500 text-white font-medium rounded-full px-8 py-5 hover:bg-white hover:text-blue-500 border-0 hover:border hover:border-blue-500"
+              >
+                Let's Connect
+              </button>
+                <button
+                class="bg-blue-500 text-white font-medium rounded-full px-8 py-5 hover:bg-white hover:text-blue-500 border-0 hover:border hover:border-blue-500"
+              >
+                Check Our Work
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for Transition -->
+    <script>
+      window.addEventListener("load", () => {
+        // Duration for the loader (in milliseconds)
+        const loaderDuration = 1000;
+
+        setTimeout(() => {
+          const loader = document.getElementById("loader");
+          const mainContent = document.getElementById("main-content");
+
+          // Fade out the loader
+          loader.style.opacity = "0";
+          loader.style.transition = "opacity 0.5s ease";
+
+          // After fade out, hide the loader and show main content
+          setTimeout(() => {
+            loader.style.display = "none";
+            mainContent.style.display = "flex";
+
+            // Trigger drop-in animations by adding the class
+            // Since we already added 'drop-in' class in HTML, ensure elements are animated
+            // Optionally, force reflow
+            void mainContent.offsetWidth;
+          }, 500);
+        }, loaderDuration);
+      });
+    </script>
+  </body>
+</html>
